@@ -10,10 +10,12 @@ class A implements I{
 }
 public class Program1 {
     public static void main(String[] args){
-        I k=new I{
-            public void print(){
-                System.out.println("Printing from anonymous class which implements interface I");
+        I k=new I() {
+            @Override
+            public void print() {
+                System.out.println("From anonymous class");
             }
-        }.print();
+        };
+        k.print();
     }
 }
