@@ -16,7 +16,7 @@ class V extends Frame{
             public void mouseDragged(MouseEvent e) {
                 x=e.getX();
                 y=e.getY();
-                getGraphics().drawLine(x,y,x+50,y+50);
+                getGraphics().drawRoundRect(x,y,100,50,25,6);
             }
 
             @Override
