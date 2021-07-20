@@ -1,15 +1,23 @@
 package Swings;
+import com.sun.xml.internal.bind.annotation.OverrideAnnotationOf;
+
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.Color;
+import java.awt.Font;
 class Z extends JFrame{
     JButton btn1;
+    int count=0;
+    String pass="",temp="";
     JTextField txt_fld1,txt_fld2;
     JLabel lbl1,lbl2;
     Z(){
+        setFont(new Font("Times New Roman",Font.BOLD,18));
+        setBackground(Color.BLUE);
         setBounds(10,10,1000,1000);
         setVisible(true);
         setLayout(null);
@@ -36,7 +44,6 @@ class Z extends JFrame{
                 System.exit(0);
             }
         });
-
         add(lbl1);
         add(lbl2);
         add(txt_fld1);
