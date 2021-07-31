@@ -5,16 +5,17 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JTabbedPane;
 import javax.swing.JPanel;
-import java.awt.Font;
+import java.awt.*;
 import java.awt.event.MouseMotionListener;
 import java.awt.event.MouseEvent;
-import java.awt.BorderLayout;
+
 class L extends JFrame{
     JTabbedPane tab;
     L(){
         setFont(new Font("Times New Roman",Font.BOLD,18));
         setBounds(10,10,1000,1000);
         //setLayout(null);
+        setBackground(Color.BLACK);
         tab=new JTabbedPane(JTabbedPane.LEFT);
         tab.addTab("SIGN UP",new Tab2());
         tab.addTab("LOGIN",new Tab1());
